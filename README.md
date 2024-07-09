@@ -9,7 +9,7 @@ pip install --no-cache-dir -r requirements.txt
 python face_detection.py
 ```
 
-### In Web
+### Another live webcam project
 ```
-https://github.com/ManivannanMurugavel/opencv-flask-liveca
+https://github.com/ManivannanMurugavel/opencv-flask-livecam
 ```
