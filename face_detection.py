@@ -5,6 +5,9 @@ import os
 
 face_casacde=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
+images_dir = './images'
+if not os.path.exists(images_dir):
+    os.makedirs(images_dir)
 
 video = cv2.VideoCapture(0)
 
@@ -16,7 +19,9 @@ while True:
         for x,y,w,h in faces:
             img=cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
             exact_time=datetime.now().strftime('%Y-%b-%d-%H-%S-%f')
-            cv2.imwrite("face detected"+str(exact_time)+".jpg",img)
+            # cv2.imwrite("face detected"+str(exact_time)+".jpg",img)
+            img_path = os.path.join(images_dir, "face_detected_" + str(exact_time) + ".jpg")
+            cv2.imwrite(img_path, img)
 
 
         cv2.imshow("home surv",frame)
