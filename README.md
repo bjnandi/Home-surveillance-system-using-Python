@@ -11,5 +11,5 @@ python face_detection.py
 
 ### In Web
 ```
-https://github.com/ManivannanMurugavel/opencv-flask-livecam/tree/master
+https://github.com/ManivannanMurugavel/opencv-flask-liveca
 ```
